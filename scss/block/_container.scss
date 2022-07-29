@@ -1,0 +1,41 @@
+.main__article-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 165px;  
+}
+@media only screen and (max-width: 440px) {
+  .main__article{
+    .main__article-container{
+        max-width: 327px;
+        flex-direction: column-reverse;
+        .main__article-left-box{
+            width: 327px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+    }
+    background: url('../../images/Bitmap\ \(10\).png');
+    max-width: 375px;
+    min-height: 670px;
+    margin: 0 -24px;
+  }
+  .container {
+    max-width: 327px;
+    padding: 0 24px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .container {
+    max-width: 689px;
+    padding: 0 39px;
+  }
+}

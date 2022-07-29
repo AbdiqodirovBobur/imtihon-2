@@ -1,0 +1,58 @@
+.main__section-phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 150px;
+  .main__section-phone-left-box {
+    width: 445px;
+    .main__section-phone-title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -0.369231px;
+      color: #36536b;
+    }
+    .main__section-phone-paragraph {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+        color: #6C8294;        
+    }
+  }
+  .main__section-phone-right-box{
+    display: flex;
+    .main__section-phone-right-img{
+        width: 263px;
+        max-height: 500px;
+        margin-left: -51px;
+    }
+  }
+}
+@media only screen and (max-width:440px){
+    .main__section-phone{
+        flex-direction: column-reverse;
+        max-width: 328px;
+        .main__section-phone-left-box{
+            align-items: center;
+            max-width: 328px;
+            text-align: center;
+        }
+        .main__section-phone-right-box{
+            max-width: 328px;
+            margin-left: 20px;
+            .main__section-phone-right-img{
+                margin-left: -10px;
+                max-width: 151px;
+                max-height: 289.67px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:1000px){
+    .main__section-phone{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
